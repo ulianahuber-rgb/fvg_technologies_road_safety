@@ -99,7 +99,7 @@ The interactive report includes **four pages**:
 1. **Road Safety Overview:** national totals, accident trends, clustering and municipality comparisons.
 2. **Municipality Deep Dive:** profiles, rates, cluster membership and recent local trends.
 3. **Prediction Performance:** regression forecasts versus the persistence baseline for 2024.
-4. **Investment Recommendations:** evidence supporting further assessment of potential target municipalities; this page can be presented as FVG Technologies' expansion recommendations.
+4. **Investment Recommendations:** presents FVG Technologies' market expansion strategy, identifies potential business opportunities in Italian cities and outlines the next steps for evaluating local needs, budgets and public tenders.
 
 The report retains the complete clustering dataset. The **995-municipality** selection is calculated separately using a DAX measure.
 
@@ -110,20 +110,27 @@ The report retains the complete clustering dataset. The **995-municipality** sel
 ## Repository structure
 
 ```text
-fvg-technologies-road-safety/
+fvg_technologies_road_safety/
+│
 ├── README.md
+├── requirements.txt
+├── .gitignore
 ├── 01_data_preparation.ipynb
 ├── 02_analysis.ipynb
 ├── 03_clustering_modeling.ipynb
 ├── 04_regression_modeling.ipynb
+│
 ├── data/
 │   ├── raw/
 │   ├── cleaned/
 │   └── powerbi/
-└── powerbi/                  # Power BI report, if included
+│
+├── dashboard/
+│   └── ISTAT_Traffic_Dashboard.pbix
+│
+└── presentation/
+    └── ISTAT_Road_Traffic_Analysis_Presentation.pptx           # Power BI report, if included
 ```
-
-*This is the proposed layout. Notebook filenames should be standardised before publication; include datasets only when size and redistribution rules permit.*
 
 ## How to reproduce
 
